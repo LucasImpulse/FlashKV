@@ -4,4 +4,4 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "toy_redis"
-version = "0.0.1"
+version = "0.0.2"

@@ -7,7 +7,7 @@ PYBIND11_MODULE(toy_redis, m) {
 	m.doc() = "Custom C++ database engine";
 
 	py::class_<Database>(m, "Database")
-		.def(py::init<>())
+		.def(py::init<const std::string&>())
 		.def("set", &Database::set)
 		.def("get", &Database::get);
 }
